@@ -1,0 +1,75 @@
+# Dependencies
+/node_modules
+/npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Build output
+/dist
+/build
+/.next
+/out
+
+# Development environment
+/.env
+/.env.local
+/.env.development.local
+/.env.test.local
+/.env.production.local
+
+# IDE and editor files
+/.idea
+/.vscode
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Three.js specific
+# Ignore texture and model files if they're too large or shouldn't be in version control
+*.gltf
+*.glb
+*.fbx
+*.obj
+*.mtl
+*.dae
+*.blend
+*.blend1
+# Comment out the above if you want to include 3D assets in your repo
+
+# Cache and temporary files
+.cache/
+.temp/
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+/coverage
+.nyc_output
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Comment out if you want to include these
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+*.hdr
+*.exr
+
+# Optional: Bundler specific
+/.parcel-cache
+/.webpack
+/stats.json
