@@ -6,8 +6,7 @@ let raycaster, mouse;
 const friction = 0.95; // Configurable: 0.95 means 5% speed reduction per frame
 const minSpeed = 0.001; // Minimum speed before stopping
 
-    import { VRButton } from './node_modules/three/examples/jsm/webxr/VRButton.js';
-function init() {
+import { VRButton } from 'https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/webxr/VRButton.js';function init() {
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.4, 1000);
     renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -40,11 +39,10 @@ function init() {
     renderer.domElement.addEventListener('mouseup', onMouseUp);
     renderer.domElement.addEventListener('mouseleave', onMouseUp);
     renderer.domElement.addEventListener('click', onClick);
-renderer.xr.enabled = true;
+    renderer.xr.enabled = true;
     // Handle window resize
     window.addEventListener('resize', onWindowResize, false);
     renderer.setAnimationLoop( function () {
-
         renderer.render( scene, camera );
 
     } );
